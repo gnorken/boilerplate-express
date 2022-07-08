@@ -3,7 +3,7 @@ let app = express();
 let absolutePath = __dirname + "/views/index.html";
 
 const mySecret = process.env["MESSAGE_STYLE"];
-console.log("mySecret", mySecret);
+console.log("mySecret: ", mySecret);
 
 //link the css styles
 app.get("/", (req, res) => {
